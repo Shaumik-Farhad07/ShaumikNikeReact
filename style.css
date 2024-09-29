@@ -1,0 +1,165 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f6f6;
+    color: #fff;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #0e0e0e;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.hero-image img {
+    width: 600px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    color: #666;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #777;
+}
+
+.hero-content button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.product-categories {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.product-categories h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 30%;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product p {
+    color: #ff6b6b;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.call-to-action {
+    padding: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.call-to-action-content {
+    display: inline-block;
+    margin: 20px;
+}
+
+.call-to-action-content img {
+    width: 50px;
+}
+
+.call-to-action-content p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+

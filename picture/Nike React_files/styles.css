@@ -1,0 +1,348 @@
+/* General Styles */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:white;
+    color: #333;
+}
+
+header {
+    background-color:rgb(255, 248, 239);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color:rgb(255, 248, 239);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight:bold;
+    margin: 0.001rem 0;
+}
+
+.hero-content p {
+    margin: 0.5rem 0;
+}
+
+.hero-content{
+    margin-bottom: 17%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.highlight {
+    color: #f26e2e;
+}
+
+.btn-primary1 {
+    background-color: #0738ec;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    border-color: rgb(255, 255, 255);
+}
+.btn-primary {
+    background-color: #0738ec;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    border-color: rgb(255, 255, 255);
+    margin-left: 50%;
+}
+
+.hero-image img {
+    margin-left: 16%;
+    margin-bottom: 15%;
+    width: 600px;
+}
+
+/* Product Sections */
+.product-section {
+    padding: 2rem;
+    text-align:left;
+    background-color: white;
+}
+
+.product-section h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.product-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.product-card h3 {
+    margin: 4rem 0 0.5rem;
+    font-weight: bolder
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.price {
+    font-size: 2rem;
+    color: #f26e2e;
+    font-weight: bolder;
+}
+
+.btn-secondary {
+    background-color: #4268f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+.color{
+    color: #f26e2e;
+}
+.format{
+    display: flex;
+    padding-left: 550px;
+    padding-top: 35px;
+}
+
+.third{
+    display: flex;
+    padding: 2rem;
+    text-align:left;
+    background-color: white;
+}
+
+.lastCards {
+    display:inline;
+    justify-content: space-around;
+    margin-top: 1rem;
+
+}
+
+.last {
+    display: flex;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-top: 2rem;
+    
+    justify-content: space-around;
+}
+
+.last h2{
+    margin-left: 10%;
+}
+.last p{
+    margin-left: 10%;
+}
+
+.ls{
+    width: 800px;
+    height: 400px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+/* Responsive Media Queries */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .hero {
+        
+        align-items: center;
+        flex-direction: column-reverse;
+        
+    }
+
+    .hero-content {
+        margin: 0;
+    }
+
+    .hero-image img {
+        width: 70%;
+        margin-top: 2rem;
+    }
+
+    .product-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 80%;
+        margin-bottom: 1.5rem;
+    }
+
+    .format {
+        flex-direction: column; /* Adjust for smaller screens */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .third{
+        align-items:center ;
+        padding: 2rem;
+        text-align:center;
+        background-color: white;
+        flex-direction: column-reverse;
+    }
+
+    .lastCards {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .last {
+        width: 80%;
+        margin-bottom: 1.5rem;
+        align-items: center;
+        flex-direction:column;
+    }
+
+    .ls {
+    
+        width: 80%;
+        margin-right: 15%;
+        height: auto;
+        display:block;
+    }
+
+    nav ul {
+        display: none; /* Hide the navigation menu on tablets */
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    nav .toggle-menu {
+        display: block;
+        cursor: pointer;
+        padding: 1rem;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+
+    .hero {
+        
+        align-items: center;
+        flex-direction: column-reverse;
+        
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        display: none; /* Hide the navigation menu on mobile */
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    nav .toggle-menu {
+        display: block;
+        cursor: pointer;
+        padding: 1rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .btn-primary1 {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .format {
+        flex-direction: column; /* Adjust for smaller screens */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .third{
+        align-items:center ;
+        padding: 2rem;
+        text-align:center;
+        background-color: white;
+        flex-direction: column-reverse;
+    }
+    .lastCards {
+        display: block; /* Change to block for a single column layout */
+        width: 100%;
+    }
+
+    .last {
+        width: 100%; /* Make cards take up full width */
+    }
+
+    .ls {
+        
+        width: 80%;
+        margin-right: 15%;
+        height: auto;
+        display: block;
+    }
+}
